@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Boda Erika & Juan David</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #f8f5f0;
+      color: #5a4a2e;
+      text-align: center;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .card {
+      max-width: 420px;
+      margin: 40px auto;
+      padding: 40px 25px;
+      background: #fffdf9;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+      border-radius: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* FLORES DECORATIVAS */
+    .card::before,
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.25;
+    }
+
+    /* FLOR SUPERIOR IZQUIERDA */
+    .card::before {
+      top: -40px;
+      left: -40px;
+      background-image: url("https://i.imgur.com/4KXQZ9E.png");
+    }
+
+    /* FLOR INFERIOR DERECHA */
+    .card::after {
+      bottom: -40px;
+      right: -40px;
+      background-image: url("https://i.imgur.com/4KXQZ9E.png");
+      transform: rotate(180deg);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #8C6A2D;
+    }
+
+    .subtitle {
+      font-style: italic;
+      margin-bottom: 25px;
+    }
+
+    .info {
+      margin: 16px 0;
+      font-size: 16px;
+    }
+
+    /* BOTONES */
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 14px;
+      width: 90%;
+      max-width: 300px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+    }
+
+    .btn-confirm {
+      background: #8C6A2D;
+      color: white;
+    }
+
+    .btn-map {
+      border: 2px solid #8C6A2D;
+      color: #8C6A2D;
+      background: white;
+    }
+
+    .small {
+      font-size: 14px;
+      margin-top: 22px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="subtitle">
+      Con la bendición de Dios y nuestras familias
+    </div>
+
+    <h1>Erika & Juan David</h1>
+
+    <div class="info">
+      Nos complace invitarte a celebrar nuestro matrimonio
+    </div>
+
+    <div class="info">
+      <strong>16 de mayo de 2026 · 4:00 PM</strong>
+    </div>
+
+    <div class="info">
+      Ceremonia:<br>
+      Av. 30 de Agosto #48-93<br>
+      Pereira, Risaralda
+    </div>
+
+    <div class="info">
+      Recepción:<br>
+      CRA 8 #28-51
+    </div>
+
+    <a class="btn btn-confirm"
+      href="https://wa.me/573125453862?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Erika%20y%20Juan%20David%20el%2016%20de%20mayo%20de%202026.%0ANombre(s)%3A%20">
+      ✅ Confirmar asistencia
+    </a>
+
+    <a class="btn btn-map"
+      href="https://maps.google.com/?q=Av.+30+de+Agosto+48-93,+Pereira,+Risaralda">
+      📍 Ver ubicación ceremonia
+    </a>
+
+    <a class="btn btn-map"
+      href="https://maps.google.com/?q=Cra+8+28-51,+Pereira">
+      📍 Ver ubicación recepción
+    </a>
+
+    <div class="small">
+      Código de vestimenta: <strong>Formal</strong><br><br>
+      Agradecemos confirmar su asistencia antes del<br>
+      <strong>30 de abril de 2026</strong>
+    </div>
+
+  </div>
+
+</body>
+</html>
